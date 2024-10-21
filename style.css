@@ -56,12 +56,12 @@ nav {
 
 /* Hero Design  */
 .hero-container {
-    width: 75%;
+    width: 862px;
     margin: 0 auto;
 }
 
 .text-container {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -113,9 +113,10 @@ nav {
 
 
 @media only screen and (max-width: 992px) {
-.nav-container {
+    .nav-container {
         padding: 40px 0;
     }
+
     .logo {
         font-size: 2rem;
     }
@@ -126,6 +127,10 @@ nav {
 
     .nav-links {
         gap: 20px;
+    }
+
+    .hero-container {
+        width: 90%;
     }
 
     .hero-container h1 {
@@ -145,6 +150,7 @@ nav {
         margin: 20px 0;
     }
 }
+
 @media only screen and (max-width: 768px) {
     nav {
         max-width: 100%;
@@ -167,6 +173,10 @@ nav {
 
     .nav-links {
         gap: 30px;
+    }
+
+    .hero-container {
+        width: 90%;
     }
 
     .text-container {
@@ -208,6 +218,10 @@ nav {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .hero-container {
+        width: 90%;
     }
 
     .text-container {
