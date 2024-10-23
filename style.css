@@ -323,9 +323,56 @@ main {
     line-height: normal;
 }
 
+/* sponsor section design  */
+.sponsor-container{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    min-height: 300px;
+}
+.sponsor-text-container{
+    width: 38%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-text-container h3{
+color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sponsor-text-container p{
+    margin-top: 1.5rem;
+    color: var(--Dark-03, #727272);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        /* 162.5% */
+}
+.sponsor-img-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.sponsor-img-container img{
+    width: 10rem;
+}
+
 
 
 /*************** Responsive Design  ****************/
+@media only screen and (max-width: 1024px){
+.sponsor-text-container {
+        width: 80%;
+    }
+}
 @media only screen and (max-width: 992px) {
     .nav-container {
         padding: 40px 0;
