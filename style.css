@@ -324,36 +324,40 @@ main {
 }
 
 /* sponsor section design  */
-.sponsor-container{
+.sponsor-container {
     margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     min-height: 300px;
 }
-.sponsor-text-container{
+
+.sponsor-text-container {
     width: 38%;
     margin: 0 auto;
     text-align: center;
 }
-.sponsor-text-container h3{
-color: var(--Dark-01, #131313);
+
+.sponsor-text-container h3 {
+    color: var(--Dark-01, #131313);
     font-family: "Work Sans";
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.sponsor-text-container p{
+
+.sponsor-text-container p {
     margin-top: 1.5rem;
     color: var(--Dark-03, #727272);
-        text-align: center;
-        font-family: "Work Sans";
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5rem;
-        /* 162.5% */
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 162.5% */
 }
-.sponsor-img-container{
+
+.sponsor-img-container {
     margin-top: 2rem;
     display: flex;
     justify-content: space-around;
@@ -361,18 +365,41 @@ color: var(--Dark-01, #131313);
     flex-wrap: wrap;
     gap: 2rem;
 }
-.sponsor-img-container img{
+
+.sponsor-img-container img {
     width: 10rem;
 }
 
+/* footer style  */
+.footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+
+.footer p {
+    color: var(--Dark-02, #424242);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 1.5rem;
+}
 
 
 /*************** Responsive Design  ****************/
-@media only screen and (max-width: 1024px){
-.sponsor-text-container {
+@media only screen and (max-width: 1024px) {
+    .feature-badge{
+        position: static;
+        margin-top: 2rem;
+    }
+    .sponsor-text-container {
         width: 80%;
     }
 }
+
 @media only screen and (max-width: 992px) {
     .nav-container {
         padding: 40px 0;
