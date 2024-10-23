@@ -118,8 +118,8 @@ main {
     margin: 0 auto;
 }
 
-/* Feature gallery design  */
-.feature-gallery {
+/* list gallery design  */
+.list-gallery {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -139,22 +139,121 @@ main {
     height: auto;
 }
 
-.feature-text-container {
+.list-text-container {
     width: 40%;
 }
 
-.feature-text-container h3,
-.feature-text-container p {
+.list-text-container h3,
+.list-text-container p {
     text-align: left;
 }
 
-.feature-text-container h3 {
+.list-text-container h3 {
     color: var(--Dark-03, #727272);
     font-family: "Work Sans";
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* Feature style  */
+.feature-container {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-text-container {
+    width: 40%;
+}
+
+.feature-text-container h3 {
+    width: 29.25rem;
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-description {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.feature-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 1.25rem;
+}
+
+.feature-card h4 {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* 162.5% */
+}
+
+.img-container {
+    width: 50%;
+}
+
+.img-container img {
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.feature-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 3rem 2.5rem;
+    display: inline-block;
+    position: relative;
+    bottom: 130px;
+    right: 100px;
+    margin-left: 2rem;
+}
+
+.feature-badge h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    /* 107.692% */
+}
+
+.feature-badge p {
+    color: #FFF;
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
 }
 
 
@@ -185,29 +284,29 @@ main {
     }
 
     .text-gray {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         margin: 20px 0;
     }
 
     .button-primary {
-        font-size: 16px;
-        padding: 12px 16px;
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
     }
 
     .hero-container img {
         margin: 20px 0;
     }
 
-    /* Feature gallery responsive  */
-    .feature-gallery {
+    /* list gallery responsive  */
+    .list-gallery {
         display: flex;
         flex-direction: column-reverse;
         margin-top: 3.5rem;
         gap: 30px;
     }
 
-    .feature-text-container {
+    .list-text-container {
         width: 90%;
         margin: 0 auto;
 
@@ -216,6 +315,65 @@ main {
     .gallery-container {
         width: 100%;
     }
+
+    /* feature section responsive  */
+    .feature-description {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+        .feature-container {
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    
+        .feature-text-container {
+            width: 100%;
+            margin-top: 4rem;
+        }
+    
+        .feature-text-container h3 {
+            width: 100%;
+            font-size: 3.5rem;
+        }
+
+        .feature-card h4{
+            font-size: 2.5rem;
+        }
+    
+        .feature-card p{
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    
+        .img-container {
+            width: 100%;
+        }
+    
+        .img-container img {
+            margin-left: 0;
+        }
+    
+        .feature-badge {
+            padding: 3rem 0px;
+            position: static;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 3rem;
+        }
+    
+        .feature-badge h3 {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+    
+        .feature-badge p {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -314,13 +472,68 @@ main {
         margin: 20px 0;
     }
 
-    /* Feature gallery responsive  */
-    .feature-text-container h3 {
+    /* list gallery responsive  */
+    .list-text-container h3 {
         font-size: 2rem;
     }
 
     .gallery-container {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+    }
+
+    /* feature section responsive  */
+    .feature-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-text-container {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .feature-text-container h3 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .feature-card h4{
+        font-size: 1.5rem;
+    }
+    .feature-card p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .img-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .img-container img{
+        margin-left: 0;
+    }
+
+    .feature-badge {
+        padding: 1.5rem 0px;
+        position: static;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .feature-badge h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .feature-badge p {
+        font-size: 1.25rem;
+        line-height: 2rem;
     }
 }
