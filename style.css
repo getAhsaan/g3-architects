@@ -374,6 +374,7 @@ main {
 .footer {
     border-radius: 8px;
     background: #FFF4E7;
+    margin-bottom: 8rem;
 }
 
 .footer p {
@@ -391,10 +392,11 @@ main {
 
 /*************** Responsive Design  ****************/
 @media only screen and (max-width: 1024px) {
-    .feature-badge{
+    .feature-badge {
         position: static;
         margin-top: 2rem;
     }
+
     .sponsor-text-container {
         width: 80%;
     }
